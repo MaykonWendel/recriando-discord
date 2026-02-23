@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    color: #23272a;
+}
+
+.hero{
+    background: linear-gradient(135deg, #1e1f4f, #5865F2);
+    color: white;
+    padding: 100px 5%;
+}
+
+.hero-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content{
+    flex: 1;
+}
+
+.hero-content p{
+    margin-bottom: 40px;
+}
+
+.hero-img{
+    width: 600px;   /* <<< AQUI você controla o tamanho */
+}
+/* BOTÕES */
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    padding: 16px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+}
+
+.white{
+    background: white;
+    color: #23272a;
+}
+
+.black{
+    background: #4752C4;
+    color: white;
+}
+
+.section {
+    position: relative;
+    padding: 120px 20px;
+    overflow: hidden;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.08) 0%,
+        rgba(0,0,0,0.04) 10%,
+        transparent 25%,
+        transparent 75%,
+        rgba(0,0,0,0.04) 90%,
+        rgba(0,0,0,0.08) 100%
+    );
+}
+
+.light {
+    background-color: #f6f6f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.container.reverse {
+    flex-direction: row-reverse;
+}
+
+.image{
+    flex:1;
+}
+
+.image img{
+    width: 100%;
+    max-width: 600px;
+    display: block;
+}
+
+.text{
+    flex: 1;
+}
+
+.text h2{
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.final{
+    text-align: center;
+    padding: 120px 20px;
+    background: #f6f6f6;
+}
+
+.final h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.final p{
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.video-box img{
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    background-color: #23272a;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+.container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.container.reverse {
+    flex-direction: column;
+}
+
+.hero{
+    padding: 120px 20px 180px;
+}
+
+.hero-container{
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-text h1{
+    font-size: 2.5rem;
+}
+
+.buttons{
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image{
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 2.3rem;
+}
+
+.text h2{
+    font-size: 1.6rem;
+}
+}
